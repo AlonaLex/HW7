@@ -1,0 +1,14 @@
+.filter {
+  @include section;
+}
+
+.filter__list {
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter__item {
+  &:not(:last-child) {
+      margin-right: 8px;
+    }
+}

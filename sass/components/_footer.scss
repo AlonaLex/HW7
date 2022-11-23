@@ -1,0 +1,44 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__list {
+  display: block;
+}
+
+.address__item {
+  &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+}
+
+.address__location,
+.address__contacts {
+  color: var(--primary-bg-c);
+  text-decoration: none;
+  transition: color var(--transition-effect);
+  
+  &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+}
+
+.address__contacts {
+  color: var(--footer-contacts-color);
+  }
+
